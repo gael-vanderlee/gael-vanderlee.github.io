@@ -1,200 +1,300 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Gaël Van der Lee",
     "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "image": "assets/img/pro_pic.jpg",
+    "email": "gael.vanderlee@univ-lille.fr",
+    "url": "https://gael-vanderlee.github.io/",
+    "summary": "Programmer, tech-enthusiast, researcher, aspiring climber",
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "gael-vanderlee",
+        "url": "https://www.linkedin.com/in/gael-vanderlee/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "University of Lille",
+      "position": "PhD candidate",
+      "location": "Lille, France",
+      "url": "",
+      "startDate": "2023-10-01",
+      "endDate": "2025-10-01",
+      "summary": "The european GENESIS project aims to find neural signals associated the user experience in VR",
+      "highlights": [
+        "Studying at the interaction between BCIs and VR, my research is focused on neural signals associated with cybersickness"
+      ]
+    },
+    {
+      "name": "Amazon",
+      "position": "Machine Learning Intern",
+      "location": "Luxembourg, Luxembourg",
+      "url": "",
+      "startDate": "2022-03-01",
+      "endDate": "2023-10-01",
+      "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
+      "highlights": [
+        "Created a machine learning pipeline around boosted trees for predicting package loss root cause.",
+        "Focused on maintainability, scalability and best practices, allowed the team to take ownership of the project and continue to improve it after my departure."
+      ]
+    },
+    {
+      "name": "Amazon",
+      "position": "Applied Science Intern",
+        "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2021-03-01",
+      "endDate": "2024-09-20",
+      "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
+      "highlights": [
+        "Designed an end-to-end anomaly detector and corrector for outbound volume time series for Amazon Transportation at a global scale, with estimated improvements of $7MM annually in NA alone",
+        "Contributed to the Y3R scientific roadmap of the team on anomaly detection strategies."
+      ]
+    },
+    {
+      "name": "Lofty AI",
+      "position": "Lead Machine Learning Scientist",
+      "location": "San Francisco, CA",
+      "url": "",
+      "startDate": "2018-01-01",
+      "endDate": "2020-11-23",
+      "summary": "Lofty AI aims to use a wide range of publicly available data in order to predict the evolution of the real estate market",
+      "highlights": [
+        "created novel solutions to obtain meaningful feature extraction across many data types at different scales under tight deadlines and in a rapidly changing environment. Developed hybrid NLP, computer vision and time series models.",
+        "Completed a highly scalable cloud-based end-to-end pipeline and internal packages to allow for fast iteration of data processing and models.",
+        "Got into the Y-combinator incubator."
+      ]
+    },
+    {
+      "name": "Vericrypt",
+      "position": "Co-Founder",
+      "location": "San Diego, CA",
+      "url": "",
+      "startDate": "2018-01-01",
+      "endDate": "2019-12-30",
+      "summary": "Vericrypt helps users make informed decisions by aggregating and analyzing millions of news articles, autonomously giving them bias and trustworthiness ratings",
+      "highlights": [
+        "Co-founded Vericrypt and got accepted into the UCSD basement incubator.",
+        "Developed, deployed and maintained the end-to-end NLP pipeline on AWS performing summarization as well as bias and sentiment analysis."
+      ]
+    },
+    {
+      "name": "Neurala",
+      "position": "Machine Learning Intern",
+      "location": "Boston, MA",
+      "url": "",
+      "startDate": "2018-06-01",
+      "endDate": "2018-09-01",
+      "summary": "Neurala develops lightweight models for use on portable devices",
+      "highlights": [
+        "Developed computer vision models and tools to help for quick iteration of Neurala's neural net-based computer vision models.",
+        "Worked on extremely large datasets, built and implemented image recognition models that rivaled the state-of-the-art in the field (0.396 AP and 0.371 AR on COCO)"
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "<a href=\"https://technovationchallenge.org/\">Technovation girls</a>",
+      "position": "Python instructor",
+      "url": "",
+      "startDate": "2020-01-01",
+      "endDate": "2020-06-01",
+      "summary": "Helped teach young girls how to code with the aim of helping them solve a problem in their community.",
+      "highlights": []
+    },
+    {
+      "organization": "<a href=\"https://www.sfbaccueil.org/\">SFBA</a>",
+      "position": "App developer",
+      "url": "",
+      "startDate": "2020-06-01",
+      "endDate": "2020-12-01",
+      "summary": "Volunteered to help develop an app to teach immigrants in the US to speak French.",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "Lille University",
+      "location": "Lille France",
+      "url": "https://www.univ-lille.fr/",
+      "area": "Brain Computer Interfaces & VR",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
+      "startDate": "2023-10-01",
+      "endDate": "2025-10-01",
+      "courses": [
+        "Neuroscience",
+        "Signal Processing",
+        "Virtual Reality"
+      ]
+    },
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "institution": "Polytechnique",
+      "location": "Paris France",
+      "url": "https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master",
+      "area": "Artificial Intelligence and Visual Computing",
+      "studyType": "Masters",
+      "startDate": "2020-09-01",
+      "endDate": "2022-09-01",
+      "courses": [
+        "Machine Learning",
+        "Deep Learning",
+        "Reinforcement Learning",
+        "Computer Vision",
+        "Natural Language/Speech Processing",
+        "High dimensional data analysis",
+        "Computer animation",
+        "Image Analysis",
+        "Statistics",
+        "Advanced 3D graphics",
+        "Socio-emotional Embodied Conversational Agents",
+        "Ethics of AI"
+      ]
+    },
+    {
+      "institution": "University of California, San Diego",
+      "location": "San Diego, CA",
+      "url": "https://cogsci.ucsd.edu/undergraduates/index.html",
+      "area": "Cognitive Science, Specialization in Machine Learning and Neural Computation",
+      "studyType": "Bachelor of Science",
+      "startDate": "2015-09-01",
+      "endDate": "2018-09-01",
+      "courses": [
+        "Brain Computer Interfaces",
+        "Machine Learning",
+        "Data Processing",
+        "Computer Science",
+        "Natural Language Processing",
+        "Probabilities & Statistics",
+        "Research Methods",
+        "Cognitive Science",
+        "Neuroscience",
+        "Language, Learning, Memory & Attention",
+        "Psychology"
+      ]
     }
   ],
+  "awards": [],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "TensorFlow Developer Certificate",
+      "date": "2020-01-01",
+      "issuer": "Google",
+      "icon": "fa-solid fa-certificate",
+      "url": "https://www.tensorflow.org/certificate"
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
+  "publications": [],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Programming",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-computer",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "Data Science",
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Java",
+        "C++",
+        "Lua"
+      ]
+    },
+    {
+      "name": "Packages",
+      "level": "Master",
+      "icon": "fa-solid fa-box-open",
+      "keywords": [
+        "Tensorflow",
+        "Keras",
+        "Jupyter",
+        "Scipy",
+        "Mxnet",
+        "Caffe",
+        "Pytorch",
+        "Scikit-learn",
+        "Pandas",
+        "Numpy",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Master",
+      "icon": "fa-solid fa-laptop",
+      "keywords": [
+        "Pycharm",
+        "SSH",
+        "Git",
+        "Matlab",
+        "Linux",
+        "CUDA",
+        "CuDNN",
+        "AWS",
+        "S3",
+        "GCP",
+        "SQL",
+        "Docker",
+        "Latex"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "French ",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-globe-europe"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Native speaker",
+      "icon": "fa-solid fa-globe-americas"
+    },
+    {
+      "language": "German",
+      "fluency": "Proficient",
+      "icon": "fa-solid fa-globe-europe"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "Proficient",
+      "icon": "fa-solid fa-globe-europe"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Sports",
+      "icon": "fa-solid fa-mountain",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Bouldering",
+        "Sport climbing",
+        "Jiu Jitsu",
+        "Pole Vaulting"
+      ]
+    },
+    {
+      "name": "Music",
+      "icon": "fa-solid fa-music",
+      "keywords": [
+          "Trumpet player",
+          "EDM",
+          "Metal"
+      ]
+    },
+    {
+      "name": "Artistic",
+      "icon": "fa-solid fa-camera-retro",
+      "keywords": [
+          "Photography",
+          "Woodworking"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+  "references": [],
   "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
   ]
 }
