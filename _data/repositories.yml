@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
+  - gael-vanderlee
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - gael-vanderlee/StyleSegments
+  - gael-vanderlee/FaceMaker
+  - gael-vanderlee/Soft3DReconstruction
+  - gael-vanderlee/TwitterTrolls
+  - gael-vanderlee/Bias_indicator
+  - gael-vanderlee/CrimeMap
