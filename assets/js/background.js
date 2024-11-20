@@ -32,14 +32,14 @@ function addDot() {
       vy: 0, // Set initial y velocity to 0
       radius: Math.random() * (config.dotMaxRadius - config.dotMinRadius) + config.dotMinRadius,
       transparency: 0 // Add transparency property
-    });
+    })
   }
 }
 
 // Create an array to store the bounding rectangles of all visible elements
 let rects = Array.from(elements, el => {
   // Check if the element is visible and contains text
-  if (el.offsetWidth !== 0 && el.offsetHeight !== 0 && el.innerText.trim() !== '') {
+  if (el.offsetWidth !== 0 && el.offsetHeight !== 0 && el.innerText && el.innerText.trim() !== '') {
     return el.getBoundingClientRect();
   }
 }).filter(Boolean); // filter out undefined values
