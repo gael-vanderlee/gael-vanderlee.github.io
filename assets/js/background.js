@@ -1,15 +1,15 @@
-const canvas = document.getElementById('background');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("background");
+const ctx = canvas.getContext("2d");
 
 // Configurable variables
 const config = {
   enableDotsAnimation: true,
-  numDots: Math.round(canvas.width * canvas.height / 500), // Number of dots
+  numDots: Math.round((canvas.width * canvas.height) / 500), // Number of dots
   dotMinRadius: 1, // Minimum dot radius
   dotMaxRadius: 2, // Maximum dot radius
   dotMaxSpeed: 1, // Maximum dot speed
   mouseRepellRadius: 100, // Mouse repel radius in pixels
-  mouseRepellForce: .05, // Mouse repel force
+  mouseRepellForce: 0.05, // Mouse repel force
   minTransparency: 0.7, // Minimum transparency for flickering effect
   maxTransparency: 1, // Maximum transparency for flickering effect
   transparencyChange: 0.05, // Amount of change in transparency for flickering effect
@@ -21,7 +21,7 @@ let dots = [];
 let mouse = { x: 0, y: 0, moved: false };
 
 // Get all the elements on the page
-const elements = document.body.getElementsByTagName('*');
+const elements = document.body.getElementsByTagName("*");
 
 function addDot() {
   if (dots.length < config.numDots) {
@@ -31,15 +31,15 @@ function addDot() {
       vx: 0, // Set initial x velocity to 0
       vy: 0, // Set initial y velocity to 0
       radius: Math.random() * (config.dotMaxRadius - config.dotMinRadius) + config.dotMinRadius,
-      transparency: 0 // Add transparency property
-    })
+      transparency: 0, // Add transparency property
+    });
   }
 }
 
 // Create an array to store the bounding rectangles of all visible elements
-let rects = Array.from(elements, el => {
+let rects = Array.from(elements, (el) => {
   // Check if the element is visible and contains text
-  if (el.offsetWidth !== 0 && el.offsetHeight !== 0 && el.innerText && el.innerText.trim() !== '') {
+  if (el.offsetWidth !== 0 && el.offsetHeight !== 0 && el.innerText && el.innerText.trim() !== "") {
     return el.getBoundingClientRect();
   }
 }).filter(Boolean); // filter out undefined values
@@ -57,7 +57,7 @@ window.onload = () => {
   }
 
   // Add event listener for window resize
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     canvas.width = document.body.scrollWidth; // Update canvas width to the entire document's width
     canvas.height = document.body.scrollHeight; // Update canvas height to the entire document's height
   });
@@ -77,7 +77,8 @@ function animate() {
 
   const mouseRepellRadiusSq = config.mouseRepellRadius * config.mouseRepellRadius;
 
-  dots = dots.filter(dot => { // Filter out dots that are not visible
+  dots = dots.filter((dot) => {
+    // Filter out dots that are not visible
     if (mouse.moved) {
       const dx = dot.x - mouse.x;
       const dy = dot.y - mouse.y;
@@ -87,8 +88,8 @@ function animate() {
         const dist = Math.sqrt(distSq);
         const repellForce = config.mouseRepellForce * (1 - dist / config.mouseRepellRadius);
 
-        dot.vx += dx / dist * repellForce;
-        dot.vy += dy / dist * repellForce;
+        dot.vx += (dx / dist) * repellForce;
+        dot.vy += (dy / dist) * repellForce;
 
         const speedSq = dot.vx * dot.vx + dot.vy * dot.vy;
         if (speedSq > config.dotMaxSpeed * config.dotMaxSpeed) {
@@ -110,9 +111,7 @@ function animate() {
     if (dot.y < 0) dot.y = canvas.height;
     if (dot.y > canvas.height) dot.y = 0;
 
-    let inRect = rects.some(rect =>
-      dot.x > rect.left && dot.x < rect.right && dot.y > rect.top && dot.y < rect.bottom
-    );
+    let inRect = rects.some((rect) => dot.x > rect.left && dot.x < rect.right && dot.y > rect.top && dot.y < rect.bottom);
 
     if (!inRect) {
       ctx.beginPath();
@@ -124,8 +123,7 @@ function animate() {
     // Update transparency for fade-in effect
     if (dot.transparency < config.minTransparency) {
       dot.transparency += 0.01;
-    }
-    else {
+    } else {
       // Update transparency for flickering effect
       dot.transparency += Math.random() * 2 * config.transparencyChange - config.transparencyChange; // Random value between -transparencyChange and transparencyChange
       dot.transparency = Math.min(Math.max(dot.transparency, config.minTransparency), config.maxTransparency); // Clamp between minTransparency and maxTransparency
