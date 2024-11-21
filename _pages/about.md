@@ -9,6 +9,10 @@ profile:
   image_circular: false
   more_info: |
     <p>PhD Student</p> <p> University of Lille</p>
+  images:
+    - pro_pic.jpg
+    - dutch.jpg
+    - climbing.jpg
 news: true
 selected_papers: true
 social: true
@@ -23,4 +27,3 @@ Here you will find information about my [professional experience](/cv), [publica
 My teachings can be found [here](/teaching).
 
 Additionally, useful information can be found on my [blog](/blog).
-

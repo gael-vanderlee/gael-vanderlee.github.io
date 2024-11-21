@@ -8,8 +8,8 @@ layout: default
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
-        {{ site.title }}
       {% endif %}
+        {{ site.title }}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -22,15 +22,9 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+          <img id="profile-pic" src="{{ profile_image_path }}" class="{{ profile_image_class }}" sizes="{{ sizes }}" alt="Profile Picture" onclick="changeImage()">
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -68,7 +62,6 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
@@ -78,3 +71,18 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+<!-- CUSTOM click on image changes it -->
+<script>
+  const images = [
+    {% for image in page.profile.images %}
+      '{{ image | prepend: "assets/img/" }}'{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ];
+  let currentIndex = 0;
+
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById('profile-pic').src = images[currentIndex];
+  }
+</script>
