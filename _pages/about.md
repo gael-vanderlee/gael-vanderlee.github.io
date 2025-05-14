@@ -18,7 +18,7 @@ selected_papers: true
 social: true
 ---
 
-Welcome to my personal website! Beware, it's still very much under construction.
+Welcome to my personal website! It's a work in progress.
 
 French-born, US educated researcher, I work in the fields of Brain Computer Interfaces, Virtual Reality and Artificial Intelligence.
 I also enjoy teaching, photography, tech and climbing.
