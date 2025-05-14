@@ -23,6 +23,6 @@ Welcome to my personal website! Beware, it's still very much under construction.
 French-born, US educated researcher, I work in the fields of Brain Computer Interfaces, Virtual Reality and Artificial Intelligence.
 I also enjoy teaching, photography, tech and climbing.
 
-Here you will find information about my [professional experience](/cv), [publications](/publications), [public GitHub repositories](/repositories), and some write-ups concerning my [projects](/projects).
+Here you will find information about my [professional experience](/cv), [publications](/publications), [public GitHub repositories](/repositories).
 
-Additionally, useful information can be found on my [blog](/blog).
+[//]: # (Additionally, useful information can be found on my [blog]&#40;/blog&#41;.)
