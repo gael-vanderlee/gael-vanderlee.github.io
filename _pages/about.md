@@ -11,8 +11,8 @@ profile:
     <p>PhD Student</p> <p> University of Lille</p>
   images:
     - pro_pic.jpg
-    - dutch.jpg
     - climbing.jpg
+    - dutch.jpg
 news: true
 selected_papers: true
 social: true
@@ -24,6 +24,5 @@ French-born, US educated researcher, I work in the fields of Brain Computer Inte
 I also enjoy teaching, photography, tech and climbing.
 
 Here you will find information about my [professional experience](/cv), [publications](/publications), [public GitHub repositories](/repositories), and some write-ups concerning my [projects](/projects).
-My teachings can be found [here](/teaching).
 
 Additionally, useful information can be found on my [blog](/blog).

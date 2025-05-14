@@ -22,9 +22,12 @@
       "url": "",
       "startDate": "2023-10-01",
       "endDate": "2025-10-01",
-      "summary": "The european GENESIS project aims to find neural signals associated the user experience in VR",
+      "summary": "The European GENESIS project aims to find neural signals associated with the user experience in VR.",
       "highlights": [
-        "Studying at the interaction between BCIs and VR, my research is focused on neural signals associated with cybersickness"
+        "Research focuses on neural signals associated with cybersickness and vection at the intersection of BCIs and VR.",
+        "Designed, obtained ethics approval for, and ran a full user study (software in Unity & Python, EEG acquisition, VR synchronisation via LSL) from proposal to publication.",
+        "Published and presented papers at international conferences; created posters and defended results to multidisciplinary audiences.",
+        "Taught master-level classes at Centrale Lille (Machine Learning and Signal Processing in English)."
       ]
     },
     {
@@ -36,21 +39,23 @@
       "endDate": "2023-10-01",
       "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
       "highlights": [
-        "Created a machine learning pipeline around boosted trees for predicting package loss root cause.",
-        "Focused on maintainability, scalability and best practices, allowed the team to take ownership of the project and continue to improve it after my departure."
+        "Created a machine-learning pipeline using boosted trees (XGBoost/LightGBM) to predict package-loss root cause.",
+        "Extensively used AWS (S3, SageMaker, Lambda, Step Functions, EC2) and Data Lake for scalable training and inference.",
+        "Applied test-driven development, version control and thorough documentation to ensure long-term maintainability and smooth hand-off to the owning team."
       ]
     },
     {
       "name": "Amazon",
       "position": "Applied Science Intern",
-        "location": "Barcelona, Spain",
+      "location": "Barcelona, Spain",
       "url": "",
       "startDate": "2021-03-01",
       "endDate": "2024-09-20",
       "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
       "highlights": [
-        "Designed an end-to-end anomaly detector and corrector for outbound volume time series for Amazon Transportation at a global scale, with estimated improvements of $7MM annually in NA alone",
-        "Contributed to the Y3R scientific roadmap of the team on anomaly detection strategies."
+        "Designed an end-to-end anomaly detector and corrector for outbound-volume time-series data at global scale, delivering an estimated $7 MM annual benefit in NA alone.",
+        "Implemented hybrid anomaly-detection strategies using ARIMA, Exponential Smoothing, Prophet, LSTMs and Transformer models on both synthetic and real data.",
+        "Presented results and advised on the Y3R scientific roadmap for anomaly-detection approaches."
       ]
     },
     {
@@ -60,11 +65,11 @@
       "url": "",
       "startDate": "2018-01-01",
       "endDate": "2020-11-23",
-      "summary": "Lofty AI aims to use a wide range of publicly available data in order to predict the evolution of the real estate market",
+      "summary": "Lofty AI is a startup that aims to use a wide range of publicly available data in order to predict the evolution of the real-estate market.",
       "highlights": [
-        "created novel solutions to obtain meaningful feature extraction across many data types at different scales under tight deadlines and in a rapidly changing environment. Developed hybrid NLP, computer vision and time series models.",
-        "Completed a highly scalable cloud-based end-to-end pipeline and internal packages to allow for fast iteration of data processing and models.",
-        "Got into the Y-combinator incubator."
+        "Created scalable end-to-end data and ML pipelines handling social-media, satellite imagery, demographics and time-series data under tight startup timelines.",
+        "Developed hybrid deep-learning models (LSTMs & CNNs) and internal Python tooling that accelerated team experimentation.",
+        "Mentored new hires in Python best practices & Git, and communicated technical progress to investors during the Y-Combinator program."
       ]
     },
     {
@@ -74,10 +79,11 @@
       "url": "",
       "startDate": "2018-01-01",
       "endDate": "2019-12-30",
-      "summary": "Vericrypt helps users make informed decisions by aggregating and analyzing millions of news articles, autonomously giving them bias and trustworthiness ratings",
+      "summary": "Vericrypt helps users make informed decisions by aggregating and analyzing millions of news articles, autonomously giving them bias and trustworthiness ratings.",
       "highlights": [
-        "Co-founded Vericrypt and got accepted into the UCSD basement incubator.",
-        "Developed, deployed and maintained the end-to-end NLP pipeline on AWS performing summarization as well as bias and sentiment analysis."
+        "Developed, deployed and maintained an NLP pipeline (summarisation, sentiment & bias analysis) processing hundreds of articles daily on AWS.",
+        "Introduced a novel emotional-manipulation-detection technique by benchmarking against an objective baseline from scientific articles.",
+        "Secured acceptance into UCSD’s “The Basement” incubator and pitched technical vision to angel investors."
       ]
     },
     {
@@ -87,10 +93,10 @@
       "url": "",
       "startDate": "2018-06-01",
       "endDate": "2018-09-01",
-      "summary": "Neurala develops lightweight models for use on portable devices",
+      "summary": "Neurala develops lightweight models for use on portable devices.",
       "highlights": [
-        "Developed computer vision models and tools to help for quick iteration of Neurala's neural net-based computer vision models.",
-        "Worked on extremely large datasets, built and implemented image recognition models that rivaled the state-of-the-art in the field (0.396 AP and 0.371 AR on COCO)"
+        "Built a plug-and-play vision toolkit (published as a pip package) enabling Neurala’s proprietary few-shot classifier to interface with multiple CNN/segmentation backbones.",
+        "Achieved 0.396 AP / 0.371 AR on COCO while working with very-large image datasets; included custom annotation, training and benchmarking pipelines."
       ]
     }
   ],
@@ -126,7 +132,12 @@
       "courses": [
         "Neuroscience",
         "Signal Processing",
-        "Virtual Reality"
+        "Virtual Reality",
+        "Machine Learning (teaching)",
+        "Signal Processing (teaching)",
+        "Brain Computer Interfaces",
+        "Scientific Reading & Writing",
+        "Scientific communication"
       ]
     },
     {
@@ -219,7 +230,8 @@
         "Pandas",
         "Numpy",
         "Matplotlib",
-        "Seaborn"
+        "Seaborn",
+        "MNE"
       ]
     },
     {
@@ -239,7 +251,8 @@
         "GCP",
         "SQL",
         "Docker",
-        "Latex"
+        "Latex",
+        "Unity"
       ]
     }
   ],
@@ -280,22 +293,20 @@
       "name": "Music",
       "icon": "fa-solid fa-music",
       "keywords": [
-          "Trumpet player",
-          "EDM",
-          "Metal"
+        "Trumpet player",
+        "EDM",
+        "Metal"
       ]
     },
     {
       "name": "Artistic",
       "icon": "fa-solid fa-camera-retro",
       "keywords": [
-          "Photography",
-          "Woodworking"
+        "Photography",
+        "Woodworking"
       ]
     }
   ],
   "references": [],
-  "projects": [
-  ]
+  "projects": []
 }
-
