@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Gaël Van der Lee",
-    "label": "Scientist",
+    "label": "PhD Candidate",
     "image": "assets/img/pro_pic.jpg",
     "email": "gael.vanderlee@univ-lille.fr",
     "url": "https://gael-vanderlee.github.io/",
@@ -299,11 +299,14 @@
       ]
     },
     {
-      "name": "Artistic",
+      "name": "Hobbies",
       "icon": "fa-solid fa-camera-retro",
       "keywords": [
         "Photography",
-        "Woodworking"
+        "Woodworking",
+        "Home labbing",
+        "Local generative AI",
+        "Ham Radio"
       ]
     }
   ],
