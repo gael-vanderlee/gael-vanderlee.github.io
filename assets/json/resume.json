@@ -8,7 +8,7 @@
     "summary": "Programmer, Brain Researcher, tech-enthusiast, aspiring climber",
     "profiles": [
       {
-        "network": "Linkedin",
+        "network": "LinkedIn",
         "username": "gael-vanderlee",
         "url": "https://www.linkedin.com/in/gael-vanderlee/"
       }
@@ -17,16 +17,18 @@
   "work": [
     {
       "name": "University of Lille",
-      "position": "PhD candidate",
+      "position": "PhD Candidate",
       "location": "Lille, France",
       "url": "",
-      "startDate": "2023-10-01",
+      "startDate": "2022-10-01",
       "endDate": "2025-10-01",
       "summary": "The European GENESIS project aims to find neural signals associated with the user experience in VR.",
       "highlights": [
         "Research focuses on neural signals associated with cybersickness and vection at the intersection of BCIs and VR.",
         "Designed, obtained ethics approval for, and ran a full user study (software in Unity & Python, EEG acquisition, VR synchronisation via LSL) from proposal to publication.",
-        "Published and presented papers at international conferences; created posters and defended results to multidisciplinary audiences.",
+        "Performed comprehensive literature reviews on BCI and cybersickness; wrote and published multiple peer-reviewed papers.",
+        "Handled participant recruitment, experimental hardware (OpenBCI, ANTNeuro, GTec) and software development in Unity/OpenVibe.",
+        "Presented research at international conferences; created posters and defended results to multidisciplinary audiences.",
         "Taught master-level classes at Centrale Lille (Machine Learning and Signal Processing in English)."
       ]
     },
@@ -36,7 +38,7 @@
       "location": "Luxembourg, Luxembourg",
       "url": "",
       "startDate": "2022-03-01",
-      "endDate": "2023-10-01",
+      "endDate": "2022-10-01",
       "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
       "highlights": [
         "Created a machine-learning pipeline using boosted trees (XGBoost/LightGBM) to predict package-loss root cause.",
@@ -50,7 +52,7 @@
       "location": "Barcelona, Spain",
       "url": "",
       "startDate": "2021-03-01",
-      "endDate": "2024-09-20",
+      "endDate": "2021-09-01",
       "summary": "The Amazon ATS team is responsible for the transportation of packages from the fulfillment center to the customer's doorstep.",
       "highlights": [
         "Designed an end-to-end anomaly detector and corrector for outbound-volume time-series data at global scale, delivering an estimated $7 MM annual benefit in NA alone.",
@@ -98,36 +100,62 @@
         "Built a plug-and-play vision toolkit (published as a pip package) enabling Neurala’s proprietary few-shot classifier to interface with multiple CNN/segmentation backbones.",
         "Achieved 0.396 AP / 0.371 AR on COCO while working with very-large image datasets; included custom annotation, training and benchmarking pipelines."
       ]
+    },
+    {
+      "name": "University of California, San Diego – de Sa Lab",
+      "position": "Research Assistant – Algorithm Development for Brain-Computer Interfaces",
+      "location": "San Diego, CA",
+      "url": "",
+      "startDate": "2017-09-01",
+      "endDate": "2018-12-01",
+      "summary": "Worked in Prof. de Sa’s lab on advanced signal processing for EEG-based BCIs.",
+      "highlights": [
+        "Developed a novel deep-learning architecture for CSP-like time-series feature extraction, improving accuracy by 2–4 % on benchmark datasets.",
+        "Designed experimental protocols and validated models on real EEG BCI datasets.",
+        "Collaborated in an academic research environment and contributed to internal presentations and publications."
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "<a href=\"https://technovationchallenge.org/\">Technovation girls</a>",
-      "position": "Python instructor",
-      "url": "",
+      "organization": "Technovation Girls",
+      "position": "Python Instructor",
+      "url": "https://technovationchallenge.org/",
       "startDate": "2020-01-01",
       "endDate": "2020-06-01",
       "summary": "Helped teach young girls how to code with the aim of helping them solve a problem in their community.",
       "highlights": []
     },
     {
-      "organization": "<a href=\"https://www.sfbaccueil.org/\">SFBA</a>",
-      "position": "App developer",
-      "url": "",
+      "organization": "SFBA",
+      "position": "App Developer",
+      "url": "https://www.sfbaccueil.org/",
       "startDate": "2020-06-01",
       "endDate": "2020-12-01",
       "summary": "Volunteered to help develop an app to teach immigrants in the US to speak French.",
       "highlights": []
+    },
+    {
+      "organization": "University of California, San Diego",
+      "position": "Data Science Instructor Assistant",
+      "url": "https://datascience.ucsd.edu/",
+      "startDate": "2018-01-01",
+      "endDate": "2018-03-01",
+      "summary": "Assisted the head of the UCSD Data Science department in teaching undergraduate data-science courses.",
+      "highlights": [
+        "Helped design and grade programming assignments and data-visualisation projects.",
+        "Provided coding assistance and conceptual explanations during labs and office hours."
+      ]
     }
   ],
   "education": [
     {
       "institution": "Lille University",
-      "location": "Lille France",
+      "location": "Lille, France",
       "url": "https://www.univ-lille.fr/",
-      "area": "Brain Computer Interfaces & VR",
+      "area": "Brain-Computer Interfaces & VR",
       "studyType": "PhD",
-      "startDate": "2023-10-01",
+      "startDate": "2022-10-01",
       "endDate": "2025-10-01",
       "courses": [
         "Neuroscience",
@@ -135,14 +163,14 @@
         "Virtual Reality",
         "Machine Learning (teaching)",
         "Signal Processing (teaching)",
-        "Brain Computer Interfaces",
+        "Brain-Computer Interfaces",
         "Scientific Reading & Writing",
-        "Scientific communication"
+        "Scientific Communication"
       ]
     },
     {
       "institution": "Polytechnique",
-      "location": "Paris France",
+      "location": "Paris, France",
       "url": "https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master",
       "area": "Artificial Intelligence and Visual Computing",
       "studyType": "Masters",
@@ -154,11 +182,11 @@
         "Reinforcement Learning",
         "Computer Vision",
         "Natural Language/Speech Processing",
-        "High dimensional data analysis",
-        "Computer animation",
+        "High Dimensional Data Analysis",
+        "Computer Animation",
         "Image Analysis",
         "Statistics",
-        "Advanced 3D graphics",
+        "Advanced 3D Graphics",
         "Socio-emotional Embodied Conversational Agents",
         "Ethics of AI"
       ]
@@ -167,12 +195,12 @@
       "institution": "University of California, San Diego",
       "location": "San Diego, CA",
       "url": "https://cogsci.ucsd.edu/undergraduates/index.html",
-      "area": "Cognitive Science, Specialization in Machine Learning and Neural Computation",
+      "area": "Cognitive Science – Machine Learning & Neural Computation",
       "studyType": "Bachelor of Science",
       "startDate": "2015-09-01",
       "endDate": "2018-09-01",
       "courses": [
-        "Brain Computer Interfaces",
+        "Brain-Computer Interfaces",
         "Machine Learning",
         "Data Processing",
         "Computer Science",
@@ -186,7 +214,6 @@
       ]
     }
   ],
-  "awards": [],
   "certificates": [
     {
       "name": "TensorFlow Developer Certificate",
@@ -196,7 +223,6 @@
       "url": "https://www.tensorflow.org/certificate"
     }
   ],
-  "publications": [],
   "skills": [
     {
       "name": "Programming",
@@ -219,19 +245,25 @@
       "level": "Master",
       "icon": "fa-solid fa-box-open",
       "keywords": [
-        "Tensorflow",
+        "TensorFlow",
         "Keras",
         "Jupyter",
         "Scipy",
         "Mxnet",
         "Caffe",
-        "Pytorch",
+        "PyTorch",
         "Scikit-learn",
         "Pandas",
         "Numpy",
         "Matplotlib",
         "Seaborn",
-        "MNE"
+        "MNE",
+        "Unity",
+        "OpenBCI",
+        "ANTNeuro",
+        "GTec",
+        "OpenVibe",
+        "LSL"
       ]
     },
     {
@@ -239,7 +271,7 @@
       "level": "Master",
       "icon": "fa-solid fa-laptop",
       "keywords": [
-        "Pycharm",
+        "PyCharm",
         "SSH",
         "Git",
         "Matlab",
@@ -252,13 +284,15 @@
         "SQL",
         "Docker",
         "Latex",
-        "Unity"
+        "Unity",
+        "AWS Lambda",
+        "AWS Step Functions"
       ]
     }
   ],
   "languages": [
     {
-      "language": "French ",
+      "language": "French",
       "fluency": "Native speaker",
       "icon": "fa-solid fa-globe-europe"
     },
@@ -276,6 +310,11 @@
       "language": "Dutch",
       "fluency": "Proficient",
       "icon": "fa-solid fa-globe-europe"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate",
+      "icon": "fa-solid fa-globe-americas"
     }
   ],
   "interests": [
@@ -284,7 +323,7 @@
       "icon": "fa-solid fa-mountain",
       "keywords": [
         "Bouldering",
-        "Sport climbing",
+        "Sport Climbing",
         "Jiu Jitsu",
         "Pole Vaulting"
       ]
@@ -304,12 +343,46 @@
       "keywords": [
         "Photography",
         "Woodworking",
-        "Home labbing",
-        "Local generative AI",
+        "Home Labbing",
+        "Local Generative AI",
         "Ham Radio"
       ]
     }
   ],
-  "references": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "Hybrid NLP & Computer Vision Model for Meme Classification",
+      "summary": "System combining image and text analysis to classify internet memes by content and sentiment."
+    },
+    {
+      "name": "Crime Risk Prediction",
+      "summary": "Predictive modelling using public police-department data to identify at-risk areas in San Diego."
+    },
+    {
+      "name": "Russian Twitter Troll Classifier",
+      "summary": "Machine-learning approach to detect troll accounts linked to disinformation campaigns."
+    },
+    {
+      "name": "OCR Receipt Reader",
+      "summary": "Tool using optical character recognition to automatically read and store information from receipts."
+    },
+    {
+      "name": "Voice Recognition with Personal Voice Identification",
+      "summary": "Model for user identification based on voice input."
+    },
+    {
+      "name": "Selective Style Transfer",
+      "summary": "Computer-vision model that applies selective style transfer to specific regions of an image."
+    },
+    {
+      "name": "Facial Expression & Age Alteration",
+      "summary": "Models capable of changing facial expressions and age features in photographs."
+    },
+    {
+      "name": "Automatic French Poetry Generator",
+      "summary": "NLP model that generates original French poetry."
+    }
+  ],
+  "awards": [],
+  "references": []
 }
