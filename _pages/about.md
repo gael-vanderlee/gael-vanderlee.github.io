@@ -25,4 +25,4 @@ I also enjoy teaching, photography, tech and climbing.
 
 Here you will find information about my [professional experience](/cv), [publications](/publications), [public GitHub repositories](/repositories).
 
-[//]: # (Additionally, useful information can be found on my [blog]&#40;/blog&#41;.)
+[//]: #(Additionally, useful information can be found on my [blog]&#40;/blog&#41;.)
