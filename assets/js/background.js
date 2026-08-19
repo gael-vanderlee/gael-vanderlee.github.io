@@ -15,6 +15,7 @@ const config = {
   transparencyChange: 0.05, // Amount of change in transparency for flickering effect
   dampingFactor: 0.99, // Damping factor for slowing down the dots
   dotInterval: 5000, // Interval for creating new dots in ms
+  dotStartDelay: 180000, // Easter egg: how long to linger on a page before the first dot shows up, in ms
 };
 
 let dots = [];
@@ -49,11 +50,13 @@ window.onload = () => {
   canvas.height = document.body.scrollHeight; // Set canvas height to the entire document's height
 
   if (config.enableDotsAnimation) {
-    // Add the first dot immediately
-    addDot();
-
-    // Schedule a new dot to be added every second
-    setInterval(addDot, config.dotInterval);
+    // Easter egg: the sky stays empty until you have stayed on the page a while.
+    // The timer is per page load, so it only rewards lingering, not browsing.
+    setTimeout(() => {
+      // Add the first dot, then keep adding one every dotInterval
+      addDot();
+      setInterval(addDot, config.dotInterval);
+    }, config.dotStartDelay);
   }
 
   // Add event listener for window resize
