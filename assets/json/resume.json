@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Gaël Van der Lee",
-    "label": "PhD Candidate",
+    "label": "PhD, Brain-Computer Interfaces & VR",
     "image": "assets/img/pro_pic.jpg",
     "email": "gael.vanderlee@univ-lille.fr",
     "url": "https://gael-vanderlee.github.io/",
@@ -21,7 +21,7 @@
       "location": "Lille, France",
       "url": "",
       "startDate": "2022-10-01",
-      "endDate": "2025-10-01",
+      "endDate": "2025-12-15",
       "summary": "The European GENESIS project aims to find neural signals associated with the user experience in VR.",
       "highlights": [
         "Research focuses on neural signals associated with cybersickness and vection at the intersection of BCIs and VR.",
@@ -156,7 +156,7 @@
       "area": "Brain-Computer Interfaces & VR",
       "studyType": "PhD",
       "startDate": "2022-10-01",
-      "endDate": "2025-10-01",
+      "endDate": "2025-12-15",
       "courses": [
         "Neuroscience",
         "Signal Processing",
@@ -351,6 +351,11 @@
   ],
   "projects": [
     {
+      "name": "Whai",
+      "summary": "AI terminal assistant: Python CLI (Typer/Rich) with an async MCP client, multi-provider LLM abstraction with streaming and tool calling, and tmux/shell context capture. Published to PyPI.",
+      "url": "https://github.com/gael-vanderlee/whai"
+    },
+    {
       "name": "Hybrid NLP & Computer Vision Model for Meme Classification",
       "summary": "System combining image and text analysis to classify internet memes by content and sentiment."
     },
@@ -383,6 +388,13 @@
       "summary": "NLP model that generates original French poetry."
     }
   ],
-  "awards": [],
+  "awards": [
+    {
+      "title": "BCI Meeting Travel Award",
+      "date": "2025-06-01",
+      "awarder": "BCI Society",
+      "summary": "Awarded to support travel to the 11th International BCI Meeting in Banff, Canada, where I presented my vection research during a Research Session."
+    }
+  ],
   "references": []
 }
