@@ -1,0 +1,52 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_cv's templates/cv/awards.liquid.
+
+  The gem renders awards in a 2/10 date-column split, which left this section
+  looking unlike Experience / Education / Projects. Data handling is unchanged;
+  only the presentation matches the other sections (inline date badge, right).
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-12 date-column">
+          {% capture award_date %}
+            {% if entry.date %}{{ entry.date }}{% endif %}
+          {% endcapture %}
+          {% assign award_date = award_date | strip %}
+          {% if award_date != '' %}
+            {% assign date = award_date | split: '-' | slice: 0, 2 | join: '.' %}
+          {% else %}
+            {% assign date = null %}
+          {% endif %}
+
+          <div class="cv-entry-head">
+            <div class="cv-entry-title">
+              {% if entry.url %}
+                <h6 class="title font-weight-bold">
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </h6>
+              {% elsif entry.title %}
+                <h6 class="title font-weight-bold">{{ entry.title }}</h6>
+              {% endif %}
+            </div>
+            {% if date %}
+              <span class="cv-date-badge">{{ date }}</span>
+            {% endif %}
+          </div>
+
+          {% if entry.awarder %}
+            <div class="cv-entry-meta">
+              <h6 style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+            </div>
+          {% endif %}
+
+          {% if entry.summary %}
+            <p class="cv-entry-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
