@@ -1,0 +1,150 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// -----------------------------------------------------------------------------
+// Local customizations
+//
+// These override the gem's theme tokens via CSS custom properties rather than
+// shadowing _sass/_themes.scss, so al_folio_core keeps owning the theme file
+// and we only freeze this short @use manifest.
+// -----------------------------------------------------------------------------
+
+html[data-theme="dark"] {
+  --global-bg-color: #121212; // slightly darker than the gem default #1c1c1d
+  --global-theme-color: #f29105; // orange accent instead of the default cyan
+  --global-hover-color: #f29105;
+}
+
+// Canvas for the animated background (assets/js/background.js)
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+// -----------------------------------------------------------------------------
+// CV entry layout, used by the local _includes/cv/* overrides.
+//
+// Defined here with plain flexbox rather than Bootstrap utility classes
+// (d-flex / w-100 / badge): al-folio v1 defaults to the Tailwind style engine
+// with al_folio_bootstrap_compat disabled, so those classes are only partially
+// styled - d-flex applies, w-100 does not, and .badge computes to display:block.
+// -----------------------------------------------------------------------------
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.cv-entry-title {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  h6 {
+    margin-bottom: 0;
+  }
+}
+
+.cv-entry-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0;
+
+  // the employer/institution line and its location pin sit on one line, so
+  // their own margins are cleared and the spacing is owned by the wrapper
+  h6,
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.cv-entry-summary {
+  margin-top: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.cv-date-badge {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  background-color: var(--global-theme-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 0.35em 0.6em;
+  border-radius: 0.25rem;
+}
+
+// The CV sections are marked up with Bootstrap's .list-group / .list-group-flush,
+// which are unstyled under the Tailwind engine, so the browser falls back to
+// default disc bullets on every entry. Restore the intended flush appearance.
+// (This also fixes the gem's own Skills / Languages / Interests / Certificates
+// sections, which are affected the same way.)
+ul.card-text.list-group {
+  list-style: none;
+  padding-left: 0;
+
+  // Bootstrap's .list-group-item supplied the horizontal inset and the rule
+  // between entries; both are gone under the Tailwind engine, which left every
+  // title flush against the card edge with no separation between entries.
+  > li.list-group-item {
+    padding: 0.9rem 1.25rem;
+    border-top: 1px solid var(--global-divider-color);
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  ul.items {
+    margin-top: 0.35rem;
+    line-height: 1.6;
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  // list-style inherits, so re-assert it on the nested highlight lists
+  ul.items {
+    list-style: circle;
+  }
+}
